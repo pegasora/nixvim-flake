@@ -1,9 +1,10 @@
 {
   # Import all your configuration modules here
-  imports = [ ./bufferline.nix ];
-
-  # colorscheme 
-  colorschemes.catppuccin.enable = true;
+  imports = [ 
+    ./plugins
+    ./opts.nix
+    ./map.nix
+  ];
 
   plugins = {
     lualine.enable = true;
