@@ -1,6 +1,6 @@
 {
-  colorschemes = { 
-    catppuccin = { 
+  colorschemes = {
+    catppuccin = {
       enable = true;
       settings = {
         flavour = "mocha";
@@ -18,7 +18,7 @@
             "italic"
           ];
         };
-      term_colors = true;
+        term_colors = true;
       };
     };
   };

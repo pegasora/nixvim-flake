@@ -8,7 +8,7 @@
         quiet = false;
         lsp_format = "fallback";
       };
-      format_on_save = { 
+      format_on_save = {
         timeout_ms = 500;
         lsp_format = "fallback";
       };
@@ -27,7 +27,7 @@
         yaml = [ "prettier" ];
       };
       formatters = {
-        injected = { 
+        injected = {
           options = {
             ignore_errors = true;
           };

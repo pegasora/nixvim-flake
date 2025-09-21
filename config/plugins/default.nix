@@ -1,13 +1,18 @@
 {
   imports = [
-    ./colorscheme.nix
-    ./bufferline.nix
-    ./which-key.nix
-    ./nvim-tree.nix
     ./alpha-nvim.nix
-    ./telescope.nix
+    ./bufferline.nix
+    ./colorscheme.nix
     ./conform.nix
+    #./harpoon.nix
+    ./lualine.nix
     ./noice.nix
+    ./nvim-tree.nix
+    ./supermaven.nix
+    ./telescope.nix
+    ./which-key.nix
   ];
 
+  plugins.notify.enable = true;
+  plugins.nui.enable = true;
 }
