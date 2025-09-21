@@ -1,12 +1,12 @@
 {
   # Import all your configuration modules here
-  imports = [ 
+  imports = [
     ./plugins
     ./opts.nix
-    ./map.nix
+    ./keymap.nix
   ];
 
   plugins = {
     lualine.enable = true;
-  }; 
+  };
 }
