@@ -5,12 +5,12 @@
     settings = {
       completion.documentation.auto_show = true;
       keymap = {
+        "<C-e>" = [
+          "hide"
+        ];
         "<C-u>" = [
           "scroll_documentation_up"
           "fallback"
-        ];
-        "<C-e>" = [
-          "hide"
         ];
         "<C-d>" = [
           "scroll_documentation_down"
@@ -29,8 +29,13 @@
           "show_documentation"
           "hide_documentation"
         ];
-        "<C-Enter>" = [
-          "select_and_accept"
+        "<CR>" = [
+          "accept"
+          "fallback"
+        ];
+        "<Up>" = [
+          "select_prev"
+          "fallback"
         ];
         "<Down>" = [
           "select_next"
@@ -44,9 +49,20 @@
           "snippet_forward"
           "fallback"
         ];
-        "<Up>" = [
-          "select_prev"
-          "fallback"
+      };
+      sources = {
+        default = [
+          "buffer"
+          "lsp"
+          "path"
+          "snippets"
+          # Community
+          #"copilot"
+          #"dictionary"
+          #"emoji"
+          #"git"
+          #"spell"
+          #"ripgrep"
         ];
       };
     };

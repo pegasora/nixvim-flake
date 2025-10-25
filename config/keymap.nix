@@ -208,5 +208,18 @@
 
     # harpoon
 
+    # toggleterm
+    {
+      key = "<leader>aa";
+      action = "<cmd>ToggleTerm<CR>";
+      mode = [
+        "n"
+        "t"
+      ];
+      options = {
+        desc = "ToggleTerm";
+      };
+    }
+
   ];
 }
