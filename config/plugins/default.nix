@@ -1,16 +1,25 @@
 {
   imports = [
-    ./alpha-nvim.nix
+    ./colors
+    ./dashboards
+    ./explorer
+    ./lsp
+
+    ./blink.nix
     ./bufferline.nix
-    ./colorscheme.nix
     ./conform.nix
     #./harpoon.nix
+    ./nvim-autopairs.nix
     ./lualine.nix
     ./noice.nix
-    ./nvim-tree.nix
-    ./supermaven.nix
+    #./supermaven.nix
     ./telescope.nix
     ./which-key.nix
+    ./todo.nix
+    ./trouble.nix
+    ./tree-sitter.nix
+    ./git-signs.nix
+    ./flash.nix
   ];
 
   plugins.notify.enable = true;

@@ -1,5 +1,13 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
+  viAlias = true;
+  vimAlias = true;
+  waylandSupport = true;
 
+  clipboard = {
+    register = "unnamedplus";
+    providers.wl-copy.enable = true;
+  };
   # global vars usually set with vim.g
   globals = {
     # leader
@@ -14,7 +22,7 @@
     loaded_netrwPlugin = 1;
   };
 
-  opts = { 
+  opts = {
     # lines numbers
     nu = true;
     number = true;
@@ -27,25 +35,25 @@
     autoindent = true;
 
     # ssh clipboard
-    clipboard = "unnamedplus";
+    #clipboard = "unnamedplus";
 
-    # colors and style 
+    # colors and style
     termguicolors = true;
     background = "dark";
 
     # nice to have
     conceallevel = 2; # hide markup for bold/italic
     confirm = true; # if not saved/confirm
-    cursorline = true; 
+    cursorline = true;
     grepprg = "rg --vimgrep";
     ignorecase = true;
     laststatus = 3;
     mouse = "a";
     ruler = false; # disables default ruler
 
-    scrolloff = 4; 
+    scrolloff = 4;
     showmode = false; # lualine
-    sidescrolloff = 8; 
+    sidescrolloff = 8;
     signcolumn = "yes";
 
     smartcase = true;
@@ -54,12 +62,11 @@
     undofile = true;
     undolevels = 10000;
     virtualedit = "block";
-    
+
     backspace = "indent,eol,start";
     updatetime = 50;
-    
+
     # turn off swapfile
     swapfile = false;
-
   };
 }

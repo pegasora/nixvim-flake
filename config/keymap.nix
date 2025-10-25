@@ -89,16 +89,6 @@
       };
     }
 
-    # new file
-    {
-      key = "<leader>fn";
-      action = "<cmd>enew<cmd>";
-      mode = "n";
-      options = {
-        desc = "New file";
-      };
-    }
-
     # windows
     {
       key = "<leader>-";
@@ -136,6 +126,26 @@
       action = "";
       options = {
         desc = "+Telescope";
+      };
+    }
+
+    # new file
+    {
+      key = "<leader>fn";
+      action = "<cmd>enew<cr>";
+      mode = "n";
+      options = {
+        desc = "New file";
+      };
+    }
+
+    # telescope
+    {
+      key = "<leader>ft";
+      action = "<cmd>Telescope<cr>";
+      mode = "n";
+      options = {
+        desc = "New file";
       };
     }
 
