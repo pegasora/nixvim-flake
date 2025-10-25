@@ -4,8 +4,8 @@
     ./dashboards
     ./explorer
     ./lsp
+    ./cmp
 
-    ./blink.nix
     ./bufferline.nix
     ./conform.nix
     #./harpoon.nix
